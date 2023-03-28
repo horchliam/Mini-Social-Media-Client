@@ -17,6 +17,8 @@
 		759150FB29D34CBE002450AA /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759150FA29D34CBE002450AA /* CreatePostView.swift */; };
 		759150FD29D34F38002450AA /* TextAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759150FC29D34F38002450AA /* TextAreaView.swift */; };
 		759150FF29D35659002450AA /* GlobalAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759150FE29D35659002450AA /* GlobalAppState.swift */; };
+		7591510129D37E8C002450AA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591510029D37E8C002450AA /* ProfileView.swift */; };
+		7591510329D38217002450AA /* RefreshRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591510229D38217002450AA /* RefreshRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		759150FA29D34CBE002450AA /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
 		759150FC29D34F38002450AA /* TextAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAreaView.swift; sourceTree = "<group>"; };
 		759150FE29D35659002450AA /* GlobalAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalAppState.swift; sourceTree = "<group>"; };
+		7591510029D37E8C002450AA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7591510229D38217002450AA /* RefreshRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,13 +67,9 @@
 		759150DE29D33F9B002450AA /* TwitterEsqueApp */ = {
 			isa = PBXGroup;
 			children = (
-				759150F729D34BB8002450AA /* Tab Bar */,
-				759150F529D34B6E002450AA /* Main */,
-				759150F329D34B2E002450AA /* Feed */,
+				7591510829D3830C002450AA /* Features */,
 				759150E329D33F9C002450AA /* Assets.xcassets */,
 				759150E529D33F9C002450AA /* Preview Content */,
-				759150FA29D34CBE002450AA /* CreatePostView.swift */,
-				759150FC29D34F38002450AA /* TextAreaView.swift */,
 				759150FE29D35659002450AA /* GlobalAppState.swift */,
 			);
 			path = TwitterEsqueApp;
@@ -96,6 +96,7 @@
 			children = (
 				759150EF29D34630002450AA /* UserPostView.swift */,
 				759150F129D3498B002450AA /* FeedView.swift */,
+				7591510229D38217002450AA /* RefreshRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -131,6 +132,51 @@
 				759150E129D33F9B002450AA /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7591510429D382DA002450AA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7591510529D382E1002450AA /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7591510529D382E1002450AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7591510029D37E8C002450AA /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7591510629D382F1002450AA /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				7591510729D382F8002450AA /* Views */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		7591510729D382F8002450AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				759150FC29D34F38002450AA /* TextAreaView.swift */,
+				759150FA29D34CBE002450AA /* CreatePostView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7591510829D3830C002450AA /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				7591510629D382F1002450AA /* Post */,
+				7591510429D382DA002450AA /* Profile */,
+				759150F729D34BB8002450AA /* Tab Bar */,
+				759150F529D34B6E002450AA /* Main */,
+				759150F329D34B2E002450AA /* Feed */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +250,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				759150FD29D34F38002450AA /* TextAreaView.swift in Sources */,
+				7591510129D37E8C002450AA /* ProfileView.swift in Sources */,
 				759150F229D3498B002450AA /* FeedView.swift in Sources */,
 				759150FF29D35659002450AA /* GlobalAppState.swift in Sources */,
 				759150EE29D343D9002450AA /* TopNavBarView.swift in Sources */,
+				7591510329D38217002450AA /* RefreshRowView.swift in Sources */,
 				759150FB29D34CBE002450AA /* CreatePostView.swift in Sources */,
 				759150F029D34630002450AA /* UserPostView.swift in Sources */,
 				759150E229D33F9B002450AA /* ContentView.swift in Sources */,
@@ -347,7 +395,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +428,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

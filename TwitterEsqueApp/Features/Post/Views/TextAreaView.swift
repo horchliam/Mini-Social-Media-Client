@@ -14,18 +14,19 @@ struct TextAreaView: View {
     init(_ placeHolder: String, text: Binding<String>) {
         self.placeHolder = placeHolder
         self._text = text
+        UITextView.appearance().backgroundColor = .clear
     }
     
     var body: some View {
         ZStack(alignment: .topLeading) {
-            TextEditor(text: $text)
-            
             if(text.isEmpty) {
                 Text(placeHolder)
                     .foregroundColor(Color(.placeholderText))
                     .padding(.horizontal, 6)
                     .padding(.vertical, 8)
             }
+            
+            TextEditor(text: $text)
         }
     }
 }
