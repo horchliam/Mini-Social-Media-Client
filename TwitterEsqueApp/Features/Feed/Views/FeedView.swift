@@ -11,6 +11,7 @@ struct FeedView: View {
     var body: some View {
         ScrollView {
             LazyVStack {
+                RefreshRowView()
                 ForEach(0...20, id:\.self) { _ in
                     UserPostView()
                 }

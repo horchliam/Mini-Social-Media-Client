@@ -32,8 +32,14 @@ extension CreatePostView {
 
             Spacer()
             Text("42")
-            Rectangle()
-                .frame(width: 100, height: 40)
+            
+            Button {
+                print("Enter pressed!")
+            } label: {
+                Rectangle()
+                    .frame(width: 100, height: 40)
+            }
+            .buttonStyle(.plain)
         }
     }
 }

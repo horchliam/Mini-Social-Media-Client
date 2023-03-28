@@ -17,11 +17,7 @@ struct ContentView: View {
             Group {
                 switch(gas.currentView) {
                 case .profile:
-                    VStack {
-                        Text("Profile View")
-                        Spacer()
-                    }
-                    .padding()
+                    ProfileView()
                 case .postCreate:
                     CreatePostView()
                 case .feed:

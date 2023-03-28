@@ -14,14 +14,18 @@ struct TopNavBarView: View {
         VStack(spacing: 0) {
             HStack {
                 TopNavBarButtonView {
-                    print("Profile Pressed!")
                     gas.currentView = .profile
                 }
                 
                 Spacer()
                 
                 TopNavBarButtonView {
-                    print("Create Post Pressed!")
+                    gas.currentView = .feed
+                }
+                
+                Spacer()
+                
+                TopNavBarButtonView {
                     gas.currentView = .postCreate
                 }
             }
