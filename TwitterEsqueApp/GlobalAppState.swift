@@ -15,4 +15,7 @@ enum ViewType {
 
 class GlobalAppState: ObservableObject {
     @Published var currentView: ViewType = .feed
+    @Published var currentUser: String? = UserDefaults.standard.string(forKey: "username")
+    @Published var currentUserId: Int? = UserDefaults.standard.integer(forKey: "userId")
+    @Published var posts: [UserPost] = [UserPost]()
 }

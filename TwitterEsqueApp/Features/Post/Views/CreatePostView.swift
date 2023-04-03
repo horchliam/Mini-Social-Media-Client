@@ -10,6 +10,7 @@ import SwiftUI
 struct CreatePostView: View {
     @State var postContent = ""
     @EnvironmentObject var gas: GlobalAppState
+    let createPostService = CreatePostService()
     
     var body: some View {
         VStack {
@@ -34,7 +35,7 @@ extension CreatePostView {
             Text("42")
             
             Button {
-                print("Enter pressed!")
+                createPostService.createPost(userId: gas.currentUserId!, message: postContent)
             } label: {
                 Rectangle()
                     .frame(width: 100, height: 40)

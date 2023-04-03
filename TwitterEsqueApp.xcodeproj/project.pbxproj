@@ -19,6 +19,11 @@
 		759150FF29D35659002450AA /* GlobalAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759150FE29D35659002450AA /* GlobalAppState.swift */; };
 		7591510129D37E8C002450AA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591510029D37E8C002450AA /* ProfileView.swift */; };
 		7591510329D38217002450AA /* RefreshRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591510229D38217002450AA /* RefreshRowView.swift */; };
+		7591511129DB1CD0002450AA /* CreateUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591511029DB1CD0002450AA /* CreateUserService.swift */; };
+		7591511329DB1F3E002450AA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591511229DB1F3E002450AA /* SignUpView.swift */; };
+		7591511529DB232E002450AA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591511429DB232E002450AA /* Config.swift */; };
+		7591511729DB267D002450AA /* CreatePostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591511629DB267D002450AA /* CreatePostService.swift */; };
+		7591511929DB268C002450AA /* GetPostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591511829DB268C002450AA /* GetPostsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,11 @@
 		759150FE29D35659002450AA /* GlobalAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalAppState.swift; sourceTree = "<group>"; };
 		7591510029D37E8C002450AA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		7591510229D38217002450AA /* RefreshRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshRowView.swift; sourceTree = "<group>"; };
+		7591511029DB1CD0002450AA /* CreateUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserService.swift; sourceTree = "<group>"; };
+		7591511229DB1F3E002450AA /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		7591511429DB232E002450AA /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		7591511629DB267D002450AA /* CreatePostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostService.swift; sourceTree = "<group>"; };
+		7591511829DB268C002450AA /* GetPostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +77,12 @@
 		759150DE29D33F9B002450AA /* TwitterEsqueApp */ = {
 			isa = PBXGroup;
 			children = (
+				7591510A29D62A03002450AA /* Services */,
 				7591510829D3830C002450AA /* Features */,
 				759150E329D33F9C002450AA /* Assets.xcassets */,
 				759150E529D33F9C002450AA /* Preview Content */,
 				759150FE29D35659002450AA /* GlobalAppState.swift */,
+				7591511429DB232E002450AA /* Config.swift */,
 			);
 			path = TwitterEsqueApp;
 			sourceTree = "<group>";
@@ -146,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				7591510029D37E8C002450AA /* ProfileView.swift */,
+				7591511229DB1F3E002450AA /* SignUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +190,16 @@
 				759150F329D34B2E002450AA /* Feed */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		7591510A29D62A03002450AA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7591511029DB1CD0002450AA /* CreateUserService.swift */,
+				7591511629DB267D002450AA /* CreatePostService.swift */,
+				7591511829DB268C002450AA /* GetPostsService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,12 +275,17 @@
 				759150FD29D34F38002450AA /* TextAreaView.swift in Sources */,
 				7591510129D37E8C002450AA /* ProfileView.swift in Sources */,
 				759150F229D3498B002450AA /* FeedView.swift in Sources */,
+				7591511529DB232E002450AA /* Config.swift in Sources */,
 				759150FF29D35659002450AA /* GlobalAppState.swift in Sources */,
 				759150EE29D343D9002450AA /* TopNavBarView.swift in Sources */,
 				7591510329D38217002450AA /* RefreshRowView.swift in Sources */,
+				7591511929DB268C002450AA /* GetPostsService.swift in Sources */,
+				7591511729DB267D002450AA /* CreatePostService.swift in Sources */,
 				759150FB29D34CBE002450AA /* CreatePostView.swift in Sources */,
 				759150F029D34630002450AA /* UserPostView.swift in Sources */,
+				7591511329DB1F3E002450AA /* SignUpView.swift in Sources */,
 				759150E229D33F9B002450AA /* ContentView.swift in Sources */,
+				7591511129DB1CD0002450AA /* CreateUserService.swift in Sources */,
 				759150E029D33F9B002450AA /* TwitterEsqueAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

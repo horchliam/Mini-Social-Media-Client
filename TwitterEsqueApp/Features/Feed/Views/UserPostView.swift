@@ -7,7 +7,14 @@
 
 import SwiftUI
 
+struct UserPost: Decodable, Hashable {
+    let postId: Int
+    let userId: Int
+    let message: String
+}
+
 struct UserPostView: View {
+    var userPost: UserPost
     var body: some View {
         HStack(alignment: .top) {
             Rectangle()
@@ -22,11 +29,10 @@ extension UserPostView {
     var textualContent: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack {
-                Text("Name")
+                Text("\(userPost.userId)")
                 Spacer()
-                Text("1d")
             }
-            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+            Text(userPost.message)
         }
         .font(.system(size: 14))
     }
@@ -34,6 +40,6 @@ extension UserPostView {
 
 struct UserPostView_Previews: PreviewProvider {
     static var previews: some View {
-        UserPostView()
+        UserPostView(userPost: UserPost(postId: 1, userId: 1, message: "Message"))
     }
 }
