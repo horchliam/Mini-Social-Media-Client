@@ -16,7 +16,7 @@ struct FeedView: View {
         ScrollView {
             LazyVStack {
                 RefreshRowView()
-                ForEach(gas.posts, id:\.self) { post in
+                ForEach(gas.posts.reversed(), id:\.self) { post in
                     UserPostView(userPost: post)
                 }
             }

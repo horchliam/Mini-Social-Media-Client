@@ -13,13 +13,8 @@ struct TwitterEsqueAppApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if let _ = gas.currentUser {
-                ContentView()
-                    .environmentObject(gas)
-            } else {
-                SignUpView()
-                    .environmentObject(gas)
-            }
+            RootView()
+                .environmentObject(gas)
         }
     }
 }

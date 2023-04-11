@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		753BC6C729E5D7D300C05B4C /* ToDo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 753BC6C629E5D7D300C05B4C /* ToDo.txt */; };
 		759150E029D33F9B002450AA /* TwitterEsqueAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759150DF29D33F9B002450AA /* TwitterEsqueAppApp.swift */; };
 		759150E229D33F9B002450AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759150E129D33F9B002450AA /* ContentView.swift */; };
 		759150E429D33F9C002450AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759150E329D33F9C002450AA /* Assets.xcassets */; };
@@ -24,9 +25,11 @@
 		7591511529DB232E002450AA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591511429DB232E002450AA /* Config.swift */; };
 		7591511729DB267D002450AA /* CreatePostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591511629DB267D002450AA /* CreatePostService.swift */; };
 		7591511929DB268C002450AA /* GetPostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591511829DB268C002450AA /* GetPostsService.swift */; };
+		7591511B29DCAEFE002450AA /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591511A29DCAEFE002450AA /* RootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		753BC6C629E5D7D300C05B4C /* ToDo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ToDo.txt; sourceTree = "<group>"; };
 		759150DC29D33F9B002450AA /* TwitterEsqueApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterEsqueApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		759150DF29D33F9B002450AA /* TwitterEsqueAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterEsqueAppApp.swift; sourceTree = "<group>"; };
 		759150E129D33F9B002450AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		7591511429DB232E002450AA /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		7591511629DB267D002450AA /* CreatePostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostService.swift; sourceTree = "<group>"; };
 		7591511829DB268C002450AA /* GetPostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsService.swift; sourceTree = "<group>"; };
+		7591511A29DCAEFE002450AA /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 		759150D329D33F9B002450AA = {
 			isa = PBXGroup;
 			children = (
+				753BC6C629E5D7D300C05B4C /* ToDo.txt */,
 				759150DE29D33F9B002450AA /* TwitterEsqueApp */,
 				759150DD29D33F9B002450AA /* Products */,
 			);
@@ -142,6 +147,7 @@
 			children = (
 				759150DF29D33F9B002450AA /* TwitterEsqueAppApp.swift */,
 				759150E129D33F9B002450AA /* ContentView.swift */,
+				7591511A29DCAEFE002450AA /* RootView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,6 +268,7 @@
 			files = (
 				759150E729D33F9C002450AA /* Preview Assets.xcassets in Resources */,
 				759150E429D33F9C002450AA /* Assets.xcassets in Resources */,
+				753BC6C729E5D7D300C05B4C /* ToDo.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +287,7 @@
 				759150EE29D343D9002450AA /* TopNavBarView.swift in Sources */,
 				7591510329D38217002450AA /* RefreshRowView.swift in Sources */,
 				7591511929DB268C002450AA /* GetPostsService.swift in Sources */,
+				7591511B29DCAEFE002450AA /* RootView.swift in Sources */,
 				7591511729DB267D002450AA /* CreatePostService.swift in Sources */,
 				759150FB29D34CBE002450AA /* CreatePostView.swift in Sources */,
 				759150F029D34630002450AA /* UserPostView.swift in Sources */,

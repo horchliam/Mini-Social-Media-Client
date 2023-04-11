@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct RefreshRowView: View {
+    @EnvironmentObject var gas: GlobalAppState
+    
+    let getPostsService = GetPostsService()
+    
     var body: some View {
         HStack {
             Spacer()
             
             Button {
                 print("Refresh pressed")
+                getPostsService.getPosts { posts in
+                    gas.posts = posts
+                }
             } label: {
                 Rectangle()
                     .frame(width: 34, height: 34)
