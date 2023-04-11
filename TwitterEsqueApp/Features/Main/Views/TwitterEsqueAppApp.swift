@@ -13,7 +13,7 @@ struct TwitterEsqueAppApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
                 .environmentObject(gas)
         }
     }

@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct FeedView: View {
+    @EnvironmentObject var gas: GlobalAppState
+    
+    let getPostsService = GetPostsService()
+
     var body: some View {
         ScrollView {
             LazyVStack {
                 RefreshRowView()
-                ForEach(0...20, id:\.self) { _ in
-                    UserPostView()
+                ForEach(gas.posts.reversed(), id:\.self) { post in
+                    UserPostView(userPost: post)
                 }
+            }
+        }
+        .onAppear {
+            getPostsService.getPosts { posts in
+                gas.posts = posts
             }
         }
     }

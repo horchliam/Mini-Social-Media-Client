@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @EnvironmentObject var gas: GlobalAppState
     var body: some View {
         VStack(alignment: .center) {
             Rectangle()
                 .frame(width: 100, height: 100)
-            Text("Name")
+            Text(gas.currentUser ?? "How do you have no name?")
             Spacer()
         }
         .padding()

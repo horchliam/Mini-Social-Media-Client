@@ -10,6 +10,7 @@ import SwiftUI
 struct CreatePostView: View {
     @State var postContent = ""
     @EnvironmentObject var gas: GlobalAppState
+    let createPostService = CreatePostService()
     
     var body: some View {
         VStack {
@@ -31,16 +32,22 @@ extension CreatePostView {
             .buttonStyle(.plain)
 
             Spacer()
-            Text("42")
+            Text("\(42 - postContent.count)")
             
             Button {
-                print("Enter pressed!")
+                validateAndPost()
             } label: {
                 Rectangle()
                     .frame(width: 100, height: 40)
             }
             .buttonStyle(.plain)
         }
+    }
+    
+    private func validateAndPost() {
+        guard postContent.count <= 42 else { return }
+        
+        createPostService.createPost(userId: gas.currentUserId!, message: postContent)
     }
 }
 
