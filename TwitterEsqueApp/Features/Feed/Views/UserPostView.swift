@@ -9,8 +9,9 @@ import SwiftUI
 
 struct UserPost: Decodable, Hashable {
     let postId: Int
-    let userId: Int
+    let username: String
     let message: String
+    let createdAt: String?
 }
 
 struct UserPostView: View {
@@ -29,7 +30,7 @@ extension UserPostView {
     var textualContent: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack {
-                Text("\(userPost.userId)")
+                Text("\(userPost.username)")
                 Spacer()
             }
             Text(userPost.message)
@@ -40,6 +41,6 @@ extension UserPostView {
 
 struct UserPostView_Previews: PreviewProvider {
     static var previews: some View {
-        UserPostView(userPost: UserPost(postId: 1, userId: 1, message: "Message"))
+        UserPostView(userPost: UserPost(postId: 1, username: "Steve", message: "Message", createdAt: nil))
     }
 }

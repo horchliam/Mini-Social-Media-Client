@@ -7,118 +7,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "464914FC-7E9D-4687-87A8-B34C4440DA75"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TwitterEsqueApp/Services/CreateUserService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "createUser(username:profilePic:_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "464914FC-7E9D-4687-87A8-B34C4440DA75 - 1eca0a93ef851d29"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TwitterEsqueApp.CreateUserService.createUser(username: Swift.String, profilePic: Swift.String, _: () -&gt; ()) -&gt; ()"
-                  moduleName = "TwitterEsqueApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lhorch/Desktop/LiamDesktop/TwitterEsqueApp/TwitterEsqueApp/Services/CreateUserService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "516">
-               </Location>
-               <Location
-                  uuid = "464914FC-7E9D-4687-87A8-B34C4440DA75 - 1eca0a93ef851d29"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TwitterEsqueApp.CreateUserService.createUser(username: Swift.String, profilePic: Swift.String, _: () -&gt; ()) -&gt; ()"
-                  moduleName = "TwitterEsqueApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lhorch/Desktop/LiamDesktop/TwitterEsqueApp/TwitterEsqueApp/Services/CreateUserService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "828">
-               </Location>
-               <Location
-                  uuid = "464914FC-7E9D-4687-87A8-B34C4440DA75 - 1eca0a93ef851d29"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TwitterEsqueApp.CreateUserService.createUser(username: Swift.String, profilePic: Swift.String, _: () -&gt; ()) -&gt; ()"
-                  moduleName = "TwitterEsqueApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lhorch/Desktop/LiamDesktop/TwitterEsqueApp/TwitterEsqueApp/Services/CreateUserService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "2288">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "898D4AC7-62BC-48DE-B07C-7B745A412222"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TwitterEsqueApp/Services/CreateUserService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "createUser(username:profilePic:_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "898D4AC7-62BC-48DE-B07C-7B745A412222 - 1eca0a93ef851e63"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TwitterEsqueApp.CreateUserService.createUser(username: Swift.String, profilePic: Swift.String, _: () -&gt; ()) -&gt; ()"
-                  moduleName = "TwitterEsqueApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lhorch/Desktop/LiamDesktop/TwitterEsqueApp/TwitterEsqueApp/Services/CreateUserService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "1900">
-               </Location>
-               <Location
-                  uuid = "898D4AC7-62BC-48DE-B07C-7B745A412222 - 33b5f9c5b1f97211"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TwitterEsqueApp.CreateUserService.createUser(username: Swift.String, profilePic: Swift.String, _: () -&gt; ()) -&gt; ()"
-                  moduleName = "TwitterEsqueApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lhorch/Desktop/LiamDesktop/TwitterEsqueApp/TwitterEsqueApp/Services/CreateUserService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "280">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4665443F-2A1A-41BC-9051-4F83ACEBDB50"
+            uuid = "3499895F-7E57-416F-A1B7-CE0C57ACA80B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -129,6 +18,70 @@
             endingLineNumber = "38"
             landmarkName = "createUser(username:profilePic:_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5BAA379B-7097-4721-95C5-0412AB036308"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TwitterEsqueApp/Services/CreatePostService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "createPost(username:message:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C42821C8-FFE7-4FC8-995D-9F5F9ECF210F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TwitterEsqueApp/Services/CreatePostService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "createPost(username:message:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6EA847AB-5F0C-43FD-A4A8-5F2A0CD9B982"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TwitterEsqueApp/Services/CreatePostService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "createPost(username:message:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EB6C44C9-4032-4BAB-82AE-44A50A3B9ECF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TwitterEsqueApp/Features/Feed/Views/FeedView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

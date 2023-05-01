@@ -1,0 +1,18 @@
+{
+  "resourceName": "s37dfeabbb",
+  "policyUUID": "7dfeabbb",
+  "bucketName": "twitteresqueapp98eea116c20846ec8517680abc7e80da",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

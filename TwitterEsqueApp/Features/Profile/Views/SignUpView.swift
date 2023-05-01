@@ -17,11 +17,14 @@ struct SignUpView: View {
             Text("Hello! What is your name?")
             TextField("Username", text: $usernameInput)
             Button("Sign up") {
-                createUserService.createUser(username: usernameInput, profilePic: "DummyValue") { userId in
-                    gas.currentUser = usernameInput
-                    UserDefaults.standard.set(usernameInput, forKey: "username")
-                    gas.currentUserId = userId
-                    UserDefaults.standard.set(userId, forKey: "userId")
+                createUserService.createUser(username: usernameInput, profilePic: "DummyValue") { username in
+                    if(username != usernameInput) {
+                        print("Something went wrong with creating this user!")
+                    }
+                    gas.currentUser = username
+                    UserDefaults.standard.set(username, forKey: "username")
+//                    gas.currentUserId = userId
+//                    UserDefaults.standard.set(userId, forKey: "userId")
                 }
             }
             Spacer()

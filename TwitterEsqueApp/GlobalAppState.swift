@@ -7,15 +7,16 @@
 
 import Foundation
 
-enum ViewType {
-    case feed
-    case postCreate
+enum popUpType {
+    case none
+    case makePost
     case profile
 }
 
 class GlobalAppState: ObservableObject {
-    @Published var currentView: ViewType = .feed
     @Published var currentUser: String? = UserDefaults.standard.string(forKey: "username")
-    @Published var currentUserId: Int? = UserDefaults.standard.integer(forKey: "userId")
+//    @Published var currentUserId: Int? = UserDefaults.standard.integer(forKey: "userId")
     @Published var posts: [UserPost] = [UserPost]()
+    @Published var outOfContent: Bool = false
+    @Published var currentPopUp: popUpType = .none
 }
