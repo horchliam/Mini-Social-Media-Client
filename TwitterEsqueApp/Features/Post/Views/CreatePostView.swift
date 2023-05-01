@@ -25,7 +25,7 @@ extension CreatePostView {
     var topPart: some View {
         HStack {
             Button {
-                gas.currentView = .feed
+                gas.currentPopUp = .none
             } label: {
                 Text("Cancel")
             }
@@ -47,7 +47,7 @@ extension CreatePostView {
     private func validateAndPost() {
         guard postContent.count <= 42 else { return }
         
-        createPostService.createPost(userId: gas.currentUserId!, message: postContent)
+        createPostService.createPost(username: gas.currentUser!, message: postContent)
     }
 }
 

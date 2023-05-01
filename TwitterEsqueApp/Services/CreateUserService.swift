@@ -8,11 +8,11 @@
 import Foundation
 
 struct CreateUserResponse: Decodable {
-    let userId: Int
+    let username: String
 }
 
 class CreateUserService {
-    func createUser(username: String, profilePic: String, _ onComplete: @escaping (Int) -> ()) {
+    func createUser(username: String, profilePic: String, _ onComplete: @escaping (String) -> ()) {
         guard let url = URL(string: Config.url + "/User") else { fatalError("Missing URL") }
 
         var urlRequest = URLRequest(url: url)
@@ -36,9 +36,9 @@ class CreateUserService {
                 DispatchQueue.main.async {
                     if let dataString = String(data: data, encoding: .utf8) {
                         print(dataString)
-                        let response: [CreateUserResponse] = try! JSONDecoder().decode([CreateUserResponse].self, from: data)
-                        print(response[0].userId)
-                        onComplete(response[0].userId)
+                        let response: CreateUserResponse = try! JSONDecoder().decode(CreateUserResponse.self, from: data)
+                        print(response.username)
+                        onComplete(response.username)
                     } else {
                         print("Error decoding: ", error ?? "")
                     }

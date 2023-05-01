@@ -8,8 +8,8 @@
 import Foundation
 
 class GetPostsService {
-    func getPosts(_ completion: @escaping ([UserPost]) -> ()) {
-        guard let url = URL(string: Config.url + "/Posts") else { fatalError("Missing URL") }
+    func getPosts(page: Int, _ completion: @escaping ([UserPost]) -> ()) {
+        guard let url = URL(string: Config.url + "/Posts/\(page)") else { fatalError("Missing URL") }
 
         let urlRequest = URLRequest(url: url)
 

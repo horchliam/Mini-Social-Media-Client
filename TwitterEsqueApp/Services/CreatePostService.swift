@@ -8,14 +8,14 @@
 import Foundation
 
 class CreatePostService {
-    func createPost(userId: Int, message: String) {
+    func createPost(username: String, message: String) {
         guard let url = URL(string: Config.url + "/Post") else { fatalError("Missing URL") }
 
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "POST"
         urlRequest.setValue("Application/json", forHTTPHeaderField: "Content-Type")
         
-        let json: [String: Any] = ["userId": userId, "message": message]
+        let json: [String: Any] = ["username": username, "message": message]
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         urlRequest.httpBody = jsonData
 

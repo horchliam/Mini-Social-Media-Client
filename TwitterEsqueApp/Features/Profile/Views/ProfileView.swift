@@ -11,6 +11,7 @@ struct ProfileView: View {
     @EnvironmentObject var gas: GlobalAppState
     var body: some View {
         VStack(alignment: .center) {
+            Spacer()
             Rectangle()
                 .frame(width: 100, height: 100)
             Text(gas.currentUser ?? "How do you have no name?")

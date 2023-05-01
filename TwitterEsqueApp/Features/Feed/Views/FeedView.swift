@@ -10,20 +10,45 @@ import SwiftUI
 struct FeedView: View {
     @EnvironmentObject var gas: GlobalAppState
     
+    @State var readyToRequest = false
+    @State var nextIndex = 1
+    
     let getPostsService = GetPostsService()
-
+    
     var body: some View {
-        ScrollView {
-            LazyVStack {
-                RefreshRowView()
-                ForEach(gas.posts.reversed(), id:\.self) { post in
-                    UserPostView(userPost: post)
+        InfiniteScroll {
+            ForEach(gas.posts, id:\.self.postId) { post in
+                UserPostView(userPost: post)
+            }
+        } ptr: {
+            readyToRequest = false
+            getPostsService.getPosts(page: 0) { posts in
+                gas.posts = posts
+                nextIndex = 1
+                gas.outOfContent = posts.count < 10
+                readyToRequest = true
+            }
+        } br: {
+            print("Bottom reached!")
+            if(readyToRequest && !gas.outOfContent) {
+                readyToRequest = false
+                getPostsService.getPosts(page: nextIndex) { posts in
+                    print("Got posts!")
+                    if(posts.count < 10) {
+                        gas.posts.append(contentsOf: posts)
+                        gas.outOfContent = true
+                    } else {
+                        gas.posts.append(contentsOf: posts)
+                        readyToRequest = true
+                        nextIndex += 1
+                    }
                 }
             }
         }
         .onAppear {
-            getPostsService.getPosts { posts in
+            getPostsService.getPosts(page: 0) { posts in
                 gas.posts = posts
+                readyToRequest = true
             }
         }
     }
@@ -32,5 +57,6 @@ struct FeedView: View {
 struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
         FeedView()
+            .environmentObject(GlobalAppState())
     }
 }

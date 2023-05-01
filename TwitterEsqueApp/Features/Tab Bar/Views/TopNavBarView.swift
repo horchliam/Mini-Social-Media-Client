@@ -14,25 +14,16 @@ struct TopNavBarView: View {
         VStack(spacing: 0) {
             HStack {
                 TopNavBarButtonView {
-                    gas.currentView = .profile
+                    gas.currentPopUp = .profile
                 }
                 
                 Spacer()
-                
-                TopNavBarButtonView {
-                    gas.currentView = .feed
-                }
-                
-                Spacer()
-                
-                TopNavBarButtonView {
-                    gas.currentView = .postCreate
-                }
             }
             .padding()
             Rectangle()
                 .frame(height: 2)
         }
+        .background(Color.yellow)
     }
 }
 
